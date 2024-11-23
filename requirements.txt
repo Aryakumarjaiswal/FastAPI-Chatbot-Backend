@@ -1,0 +1,7 @@
+google-generativeai
+fastapi
+pydantic
+uvicorn
+sqlalchemy
+pyarrow
+pandas

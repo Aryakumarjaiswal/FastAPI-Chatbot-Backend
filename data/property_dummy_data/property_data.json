@@ -1,0 +1,147 @@
+{
+    "properties": [
+        {
+            "property_id": "VR001",
+            "name": "Oceanfront Paradise Villa",
+            "location": {
+                "address": "123 Beach Road",
+                "city": "Malibu",
+                "state": "California",
+                "zip": "90265",
+                "coordinates": {
+                    "latitude": "34.0259",
+                    "longitude": "-118.7798"
+                }
+            },
+            "description": "Luxurious 4-bedroom oceanfront villa with panoramic views of the Pacific. Recently renovated in 2023 with modern amenities and direct beach access.",
+            "details": {
+                "bedrooms": 4,
+                "bathrooms": 3.5,
+                "max_guests": 8,
+                "square_feet": 3200
+            },
+            "amenities": [
+                "Private pool",
+                "Hot tub",
+                "Full kitchen",
+                "WiFi",
+                "Beach equipment",
+                "BBQ grill",
+                "Smart TV",
+                "Washer/Dryer"
+            ],
+            "pricing": {
+                "base_rate": 750,
+                "cleaning_fee": 200,
+                "security_deposit": 1000,
+                "seasonal_rates": {
+                    "summer": 950,
+                    "winter": 650,
+                    "holiday": 1200
+                }
+            },
+            "policies": {
+                "check_in": "4:00 PM",
+                "check_out": "11:00 AM",
+                "minimum_stay": 2,
+                "cancellation": "Full refund if cancelled 30 days before check-in, 50% refund if cancelled 14 days before check-in",
+                "house_rules": [
+                    "No smoking",
+                    "No parties",
+                    "Quiet hours 10 PM - 8 AM",
+                    "Pets allowed with additional deposit"
+                ]
+            },
+            "availability": {
+                "blocked_dates": [
+                    "2024-12-24",
+                    "2024-12-25",
+                    "2024-12-26"
+                ]
+            }
+        },
+        {
+            "property_id": "VR002",
+            "name": "Mountain View Cabin",
+            "location": {
+                "address": "456 Pine Trail",
+                "city": "Aspen",
+                "state": "Colorado",
+                "zip": "81611",
+                "coordinates": {
+                    "latitude": "39.1911",
+                    "longitude": "-106.8175"
+                }
+            },
+            "description": "Cozy 2-bedroom cabin nestled in the mountains. Perfect for ski trips and summer hiking adventures. Features authentic log cabin architecture with modern comforts.",
+            "details": {
+                "bedrooms": 2,
+                "bathrooms": 2,
+                "max_guests": 6,
+                "square_feet": 1800
+            },
+            "amenities": [
+                "Fireplace",
+                "Ski storage",
+                "Full kitchen",
+                "WiFi",
+                "Mountain views",
+                "Heated floors",
+                "Smart TV",
+                "Boot warmers"
+            ],
+            "pricing": {
+                "base_rate": 400,
+                "cleaning_fee": 150,
+                "security_deposit": 500,
+                "seasonal_rates": {
+                    "summer": 350,
+                    "winter": 600,
+                    "holiday": 800
+                }
+            },
+            "policies": {
+                "check_in": "3:00 PM",
+                "check_out": "10:00 AM",
+                "minimum_stay": 3,
+                "cancellation": "Full refund if cancelled 14 days before check-in, 50% refund if cancelled 7 days before check-in",
+                "house_rules": [
+                    "No smoking",
+                    "No parties",
+                    "Quiet hours 9 PM - 7 AM",
+                    "No pets allowed"
+                ]
+            },
+            "availability": {
+                "blocked_dates": [
+                    "2024-01-01",
+                    "2024-02-14",
+                    "2024-02-15"
+                ]
+            }
+        }
+    ],
+    "global_policies": {
+        "payment_methods": [
+            "Credit Card",
+            "Debit Card",
+            "PayPal"
+        ],
+        "required_documents": [
+            "Valid ID",
+            "Credit card for incidentals"
+        ],
+        "insurance_options": {
+            "travel_insurance": {
+                "provider": "SafeStay Insurance",
+                "cost": "7% of total booking",
+                "coverage": "Cancellation, medical, property damage"
+            }
+        },
+        "special_offers": {
+            "extended_stay": "10% off for stays longer than 7 nights",
+            "early_bird": "15% off when booking 3 months in advance",
+            "last_minute": "25% off for bookings within 48 hours of check-in"
+        }
+    }
+}
