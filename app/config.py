@@ -25,7 +25,7 @@ system_instruction = """
         In the end of each answer, you can direct the user to the website: https://maitriai.com/contact-us/, Whatsapp number: 9022049092.
         Also inform the customer, that you can transfer the chat to a real person.
     Format: Respond in a formal and elaborate manner, providing as much relevant information as possible. If you do not know the answer, respond by saying you do not know. The response should be in plain text without any formatting.
-    Function Call: You have the ability to transfer the chat to the customer service team,.
+    Function Call: You have the ability to transfer the chat to the customer service team,If user asks for Transfering call then professionally answer that the call is transfered.
 """
 
 
@@ -43,19 +43,11 @@ def transfer_to_customer_service(
     name: str = None, email: str = None, phone_number: str = None
 ):
     """Simulates transferring the chat to the customer service team."""
-    with SessionLocal() as db:  # Open a session for database interaction
-        # Check if the user already exists
+    with SessionLocal() as db: 
+
         user = db.query(ChatRecord).filter_by(email=email).first()
-        
 
 
-        #if user:
-            
-
-
-
-
-        # If user does not exist, prompt for details
         if not name or not email or not phone_number:
             return {
                 "status": "error",
@@ -67,9 +59,7 @@ def transfer_to_customer_service(
         db.add(new_user)
         db.commit()
 
-        print(
-            f"New user added to database. Chat transferred to customer service team. Name: {name}, Email: {email}, Phone: {phone_number}"
-        )
+
         return {
             "status": "transferred",
             "name": name,
