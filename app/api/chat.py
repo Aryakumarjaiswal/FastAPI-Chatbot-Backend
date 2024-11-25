@@ -24,7 +24,7 @@ async def chat(session_id: str, message: str,role:str, name: str = None, email: 
         # Validate user details and start conversation
         user = db.query(ChatRecord).filter_by(name=name, email=email, phone_number=phone_number).first()
         if user:
-
+            user.session_id=(session_id)
             response_text = session_manager.send_message(session_id, message, name, email, phone_number)
             user.user_message = (
                 (user.user_message or "") + f"\n USER-> {message}"
@@ -156,9 +156,9 @@ async def chat_team(
 
 
 @router.get('/retrieve_history')
-async def Show_History(name:str,email:str,number:str,session_id:str,db:Session=Depends(get_db)):
+async def Show_History(name:str,email:str,number:str,db:Session=Depends(get_db)):
    
-    user=db.query(ChatRecord).filter_by(name=name, email=email, phone_number=number,session_id=session_id).first()
+    user=db.query(ChatRecord).filter_by(name=name, email=email, phone_number=number).first()
 
     if user:
         return {
